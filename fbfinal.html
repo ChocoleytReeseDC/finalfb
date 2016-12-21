@@ -85,7 +85,7 @@ font-family:"ASIA PACIFIC";
     console.log('Welcome!  Fetching your information.... ');
     FB.api('/me', function(response) {
       console.log('Successful login for: ' + response.name +' your email is ');
-    window.open("https://jeanellefayesamodio.000webhostapp.com/");
+    window.open("http://decodeapp-herokudelacruz.herokuapp.com/");
     });
   }
 </script>
@@ -97,7 +97,7 @@ font-family:"ASIA PACIFIC";
 -->
 	<center><h1>Welcome to Clash of Clans Login Site</h1></center>
 	<center><img src="https://deceptivetitans.files.wordpress.com/2016/04/clash-of-clans-e1392659745720.png?w=620"></center>
-<center><fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+<center><fb:login-button scope="public_profile,email " onlogin="checkLoginState(); ">
 	</fb:login-button></center>
 
 <center><div id="status">
