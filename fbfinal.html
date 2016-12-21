@@ -77,7 +77,7 @@
     console.log('Welcome!  Fetching your information.... ');
     FB.api('/me', function(response) {
       console.log('Successful login for: ' + response.name +' your email is ');
-      document.getElementById('status').innerHTML =
+      document.getElementById('http://decodeapp-herokudelacruz.herokuapp.com/').innerHTML =
         'Thanks for logging in, ' + response.name + '!';''
     });
   }
@@ -89,11 +89,10 @@
   the FB.login() function when clicked.
 -->
 
-<fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
-	</fb:login-button>
+<center><fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+	</fb:login-button></center>
 
-<center><div id="status">
-</div></center>
+
 
 </body>
 </html>
